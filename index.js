@@ -10,22 +10,40 @@ if (votingAge >= 18){
 
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
+let store = "Belks"
+let price = 10
 
+if (store != "Belks") {
+    price = 15;
+} else if (store = "Belks") {
+    store = "Walmart";
+} else {
+    console.log("Does not compute");
+}
 
+console.log(store);
 
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
-
+let num = "1999"
+console.log(num);
+Number(num);
+console.log(num);
 
 
 
 
 //Task d: Write a function to multiply a*b 
+// function multiply (a, b) {
+//     return a * b
+// }
+// console.log(multiply(2, 4));
 
-
-
-
+const multiply = (a, b) => {
+    return a * b;
+}
+console.log(multiply(5, 5));
 
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
