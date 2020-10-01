@@ -207,10 +207,12 @@ function gradeCalculator(grade) {
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
 
+let words = "This is a string, I would like to make it longer, but I'm not sure what to type, so this should do"
 
+const countVowels = words => Array.from(words)
+  .filter(letter => 'aeiouAEIOU'.includes(letter)).length;
 
-
-
+console.log(countVowels(words));
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
