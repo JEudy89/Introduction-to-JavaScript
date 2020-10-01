@@ -146,20 +146,20 @@ console.log(food(1,15))
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
-function miles(KM){
+function kMToMiles(KM){
     return (KM * 0.62137);
 }
 
-console.log(miles(5));
+console.log(kMToMiles(5));
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
-function CM(feet){
+function feetToCM(feet){
     return (feet * 30.48);
 }
 
-console.log(CM(10));
+console.log(feetToCM(10));
 
 
 
@@ -167,10 +167,16 @@ console.log(CM(10));
 // 99 bottles of soda on the wall
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
-  
-
-
-
+  function annoyingSong(number) {
+for (number; number > 0; number--){
+    if (number > 1){
+    console.log(`${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around ${number -1} bottles of soda on the wall`)
+} else if (number = 1){
+    console.log(`${number} bottle of soda on the wall, ${number} bottle of soda, take one down pass it around ${number -1} bottles of soda on the wall`)
+}
+}
+}
+console.log(annoyingSong(99));
 
 /************************************************************** Task 7 **************************************************************/
 //Grade Calculator
