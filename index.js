@@ -168,14 +168,17 @@ console.log(feetToCM(10));
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   function annoyingSong(number) {
-for (number; number > 0; number--){
+
+
+    for (number; number > 0; number--){
     if (number > 1){
     console.log(`${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around ${number -1} bottles of soda on the wall`)
 } else if (number = 1){
     console.log(`${number} bottle of soda on the wall, ${number} bottle of soda, take one down pass it around ${number -1} bottles of soda on the wall`)
 }
 }
-}
+  }
+
 console.log(annoyingSong(99));
 
 /************************************************************** Task 7 **************************************************************/
